@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding-left: 0;
+  min-width: 1040px;
+  font-family: Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+  padding: 0 30px; /* 10px ? */
+}
+
+.btn {
+  display: inline-block;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.btn-blue {
+  background: #382d78;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.btn-blue:hover {
+  background: #32286c;
+}
+
+.btn-blue:active {
+  background: #32286c;
+  color: #534c81;
+}
+
+.main-header {
+  padding-top: 35px;
+  padding-bottom: 80px;
+  background-color: #6451d5;
+}
+
+.logo {
+  float: left;
+  width: 182px;
+  min-height: 82px;
+}
+
+.logo img {
+  display: block; /* Зачем? */
+}
+
+.main-menu {
+  width: 670px;
+  float: right;
+  margin-top: 25px;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-right: 50px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.main-menu li:last-child {
+  margin-right: 0;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-menu a:hover {
+  text-decoration: underline;
+}
+
+.main-menu a:active {
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.header-top::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.header-top {
+  margin-bottom: 90px;
+}
+
+.promo {
+  position: relative;
+  z-index: 10;
+  width: 450px;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 380px;
+  z-index: -1;
+  width: 653px;
+  height: 451px;
+  /* background-image: url("../img/bg-promo.png"); */
+  background-image: url("../img/bg_promo.png");
+  background-repeat: no-repeat;
+}
+
+.promo-title {
+  margin-bottom: 40px;
+  line-height: 50px;
+  color: #ffffff;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.promo p {
+  width: 320px;
+  margin-bottom: 45px;
+  line-height: 30px;
+  color: #bcb3f2;
+}
+
+.main-header .btn {
+  width: 320px;
+}
+
+.features {
+  padding-top: 50px;
+  padding-bottom: 45px;
+  background-color: #efefef;
+}
+
+.features .container::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.features-item {
+  position: relative;
+  width: 320px;
+  float: left;
+  margin-right: 30px;
+  padding-top: 85px;
+  text-align: center;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.features-title {
+  margin-bottom: 25px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 22px;
+}
+
+.features p {
+  color: #555555;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.features-icon {
+  position: absolute;
+  width: 80px;
+  height: 70px;
+  top: 0;
+  left: 120px;
+  background-position: right 50% top 0;
+  background-repeat: no-repeat;
+}
+
+.features-icon-shedule {
+  /* background-image: url("../img/icon-shedule.png"); */
+  background-image: url("http://i.piccy.info/i9/d9f4194b7b8487adb7e53a960f953b04/1575278441/909/1350613/icon_shedule.png");
+}
+
+.features-icon-practice {
+  /* background-image: url("../img/icon-practice.png"); */
+  background-image: url("http://i.piccy.info/i9/0fb4cf3fa2e1e5e1e276c771ed10a1d6/1575278376/1948/1350613/icon_practice.png");
+  
+}
+
+.features-icon-work {
+  /* background-image: url("../img/icon-work.png"); */
+  background-image: url("http://i.piccy.info/i9/af0fa185a2e4d80c9ec41b06649f89d3/1575278498/1460/1350613/icon_work.png");
+}
+
+.info {
+  padding-top: 50px;
+  padding-bottom: 75px;
+  background-color: #ffffff;
+}
+
+.info-title,
+.contacts-title {
+  margin: 0;
+  margin-bottom: 60px;
+  line-height: 50px;
+  color: #000000;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 45px;
+}
+
+.info-table,
+.info-table td {
+  border-collapse: collapse;
+  border: solid 2px #a7a7a7;
+}
+
+.info-table td,
+.info-table th {
+  padding: 19px 35px 20px 30px;
+  text-align: left;
+  vertical-align: super;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.info-table strong {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.info-table .table-header {
+  background-color: #efefef;
+}
+
+.info-table td.name {
+  width: 28%;
+}
+
+.info-table td.duration {
+  width: 19%;
+}
+
+.info-table td.description {
+  width: 53%;
+}
+
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  background-color: #efefef;
+}
+
+.contacts-form {
+  float: left;
+  width: 640px;
+}
+
+.contacts-form td {
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.contacts-form .title {
+  width: 18%;
+  padding-top: 15px;
+  padding-right: 15px;
+  text-align: right;
+  vertical-align: top;
+  color: #000000;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.contacts-form .field {
+  width: 82%;
+  padding-top: 10px;
+}
+
+.contacts-form input[type="text"],
+.contacts-form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 25px;
+  font-family: Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  outline: none;
+  border: 2px solid #b2b2b2;
+  border-radius: 2px;
+}
+
+.contacts-form input[type="text"]:hover,
+.contacts-form textarea:hover {
+  border: 2px solid #7f7f7f;
+}
+
+.contacts-form input[type="text"]:active,
+.contacts-form textarea:active {
+  border: 2px solid #6451d5;
+}
+
+.contacts-form input[type="radio"][name="sex"] {
+  margin-left: 20px;
+  margin-right: 25px;
+}
+
+.contacts-form input[type="radio"][name="sex"][id="female"] {
+  margin-left: 50px;
+}
+
+.contacts-form textarea {
+  min-height: 110px;
+  resize: none;
+  text-align: left;
+}
+
+.contacts-form .btn {
+  width: 100%;
+}
+.contacts-instructions {
+  float: right;
+  width: 320px;
+}
+
+.contacts .container::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.contacts-instructions h3 {
+  margin-bottom: 25px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 22px;
+}
+
+.contacts-instructions p {
+  margin-bottom: 25px;
+  color: #555555;
+}
+
+.contacts-instructions-alert {
+  margin: 40px 0 0 0;
+}
+
+.contacts-instructions-alert strong {
+  color: black;
+}
+
+.main-footer {
+  padding-top: 65px;
+  padding-bottom: 90px;
+  background-color: #2a2546;
+}
+
+.main-footer::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.footer-address {
+  float: left;
+  width: 300px;
+  margin-right: 30px;
+  color: #ffffff;
+}
+
+.footer-address .logo {
+  float: none;
+}
+
+.main-footer p {
+  margin-top: 73px;
+}
+
+.footer-menu {
+  float: left;
+  width: 150px;
+  margin-top: 25px;
+  margin-right: 30px;
+}
+
+.footer-menu:last-child {
+  margin-right: 0;
+}
+
+.footer-menu h3 {
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.footer-menu ul {
+  list-style: none;
+}
+
+.footer-menu li {
+  margin-bottom: 25px;
+}
+
+.footer-menu a {
+  color: #bcb3f2;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-menu a:active {
+  opacity: 0.3;
+}
